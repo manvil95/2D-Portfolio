@@ -59,6 +59,23 @@ k.scene("main", async () => {
 
     const map = k.add([k.sprite("map"), k.pos(0), k.scale(scaleFactor)]);
 
+    const playerTop = k.make([
+        k.sprite("character", { anim: "idle-down-t"}),
+        k.area({
+            shape: new k.Rect(k.vec2(0, 10), 16, 16),
+        }),
+        k.body(),
+        k.anchor("center"),
+        k.pos(0, -16), // Dónde posicionamos el pj
+        k.scale(scaleFactor),
+        {
+            speed: 250,
+            direction: "down",
+            isInDialogue: false,
+        },
+        "playeTop",
+    ]);
+    
     const player = k.make([
         k.sprite("character", { anim: "idle-down"}),
         k.area({
@@ -75,6 +92,10 @@ k.scene("main", async () => {
         },
         "player",
     ]);
+
+    player.onUpdate(() => {
+        playerTop.pos = k.vec2(player.pos.x, player.pos.y + 20);
+    });
 
     for (const layer of layers) {
         if (layer.name === "boundaries") { // Nombre de los límites en map.json
@@ -126,10 +147,12 @@ k.scene("main", async () => {
     k.onResize(() => {
         setCamScale(k);
     });
-
+    
+    
     k.onUpdate(() => {
         k.camPos(player.worldPos().x, player.worldPos().y - 100);
     });
+    
 
     k.onMouseDown((mouseBtn) => {
         if (mouseBtn !== "left" || player.isInDialogue) return;

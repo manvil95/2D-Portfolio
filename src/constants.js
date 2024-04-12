@@ -1,5 +1,5 @@
 // Contendrá todas las constantes, diálogos y demás...
-export const scaleFactor = 1;
+export const scaleFactor = 2;
 
 export const bob = {
     idleDownTop: 3,
