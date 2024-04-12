@@ -11,6 +11,11 @@ In order to edit maps you need to download this program: [**Tiled Editor**](http
    - Use custom interface font / 12px(or your choose)
 3. View / Snapping / No Snapping
 4. New Tileset
+   - Boundaries
+   - Props
+   - Ground
+
+When the TileSet Map is ready, Export as an image / Only visible layers.
 
 ### Assets
 - [Modern Interiors](https://limezu.itch.io/moderninteriors)
