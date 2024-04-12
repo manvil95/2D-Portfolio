@@ -1,4 +1,4 @@
-import { dialogueData, scaleFactor } from "./constants";
+import { bob, dialogueData, scaleFactor } from "./constants";
 import { k } from "./kaboomCtx";
 import { displayDialogue, setCamScale } from "./utils";
 
@@ -31,18 +31,18 @@ k.loadSprite("character", "./assets/Bob_16x16.png", {
     sliceY: 14, // Hay 14 frames por columna (224 / 16)
     anims: {
         
-        "idle-down-t" : 3,
-        "walk-down-t" : { from: 114, to: 119, loop: true, speed: 8 }, 
-        "idle-up-t" : 1,
-        "walk-up-t" : { from: 102, to: 107, loop: true, speed: 8 }, 
-        "idle-side-t" : 2,
-        "walk-side-t" : { from: 108, to: 113, loop: true, speed: 8 },
-        "idle-down" : 27,
-        "walk-down" : { from: 138, to: 143, loop: true, speed: 8 }, 
-        "idle-up" : 25,
-        "walk-up" : { from: 126, to: 131, loop: true, speed: 8 }, 
-        "idle-side" : 26,
-        "walk-side" : { from: 132, to: 137, loop: true, speed: 8 },
+        "idle-down-t" : bob.idleDownTop,
+        "walk-down-t" : { from: bob.walkDownStartTop, to: bob.walkDownEndTop, loop: true, speed: 8 }, 
+        "idle-up-t" : bob.idleUpTop,
+        "walk-up-t" : { from: bob.walkUpStartTop, to: bob.walkDownEndTop, loop: true, speed: 8 }, 
+        "idle-side-t" : bob.ide,
+        "walk-side-t" : { from: bob.walkSideStartTop, to: bob.walkSideEndTop, loop: true, speed: 8 },
+        "idle-down" : bob.idleDown,
+        "walk-down" : { from: bob.walkDownStartTop, to: bob.walkDownEndTop, loop: true, speed: 8 }, 
+        "idle-up" : bob.idleUp,
+        "walk-up" : { from: bob.walkUpStart, to: bob.walkUpEnd, loop: true, speed: 8 }, 
+        "idle-side" : bob.idleSide,
+        "walk-side" : { from: bob.walkSideStart, to: bob.walkSideEnd, loop: true, speed: 8 },
 
     },
 });
