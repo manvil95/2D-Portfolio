@@ -38,7 +38,7 @@ k.loadSprite("character", "./assets/Bob_16x16.png", {
         "idle-side-t" : bob.ide,
         "walk-side-t" : { from: bob.walkSideStartTop, to: bob.walkSideEndTop, loop: true, speed: 8 },
         "idle-down" : bob.idleDown,
-        "walk-down" : { from: bob.walkDownStartTop, to: bob.walkDownEndTop, loop: true, speed: 8 }, 
+        "walk-down" : { from: bob.walkDownStart, to: bob.walkDownEnd, loop: true, speed: 8 }, 
         "idle-up" : bob.idleUp,
         "walk-up" : { from: bob.walkUpStart, to: bob.walkUpEnd, loop: true, speed: 8 }, 
         "idle-side" : bob.idleSide,
