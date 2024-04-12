@@ -1,5 +1,6 @@
 import { scaleFactor, BOB } from "./constants";
 import { k } from "./kaboomCtx";
+import { displayDialogue } from "./utils";
 
 // Permite cargar una imagen como sprite
 // Cualquier item en la carpeta public, se puede routear con './'
@@ -64,6 +65,15 @@ k.scene("main", async () => {
                     k.pos(boundary.x, boundary.y),
                     boundary.name
                 ])
+
+                if (boundary.name) {
+                    player.onCollide(boundary.name, () => {
+                       player.isInDialogue = true
+                       // TODO utils, crear una nueva
+                       player.isInDialogue = true
+                       displayDialogue("TODO", () => player.isInDialogue = false)  
+                    });
+                }
             }
         }
     }
