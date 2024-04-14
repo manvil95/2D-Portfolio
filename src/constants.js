@@ -1,6 +1,8 @@
 // Contendrá todas las constantes, diálogos y demás...
+// Const para modificar la escala visible del juego
 export const scaleFactor = 2;
 
+// *** P E R S O N A J E ***
 export const bob = {
     idleDownTop: 3,
     idleDown: 27,
@@ -22,6 +24,7 @@ export const bob = {
     walkSideEnd: 137,
 };
 
+// *** D I A L O G O S ***
 export const dialogueData = {
     pc: `This is my PC. I work mostly in JavaScript/TypeScript these days.
     I've made a couple of games in that language. I also like Golang and Python. Anyway regardless of the language, I just like programming.
@@ -41,7 +44,7 @@ export const dialogueData = {
   Kaboom.js by watching some of my tutorials <a href="https://youtube.com/@jslegenddev" target="_blank">here</a>.`,
     library: `There are a lot of programming books on my shelves. There is even one in French (I also speak French btw).
   I probably only read one of them. Who else compulsively buys technical books without ever finishing them?`,
-    exit: `If you want to exit JSLegendDev's portfolio, just close the tab.`,
+    exit: `If you want to exit manvil95's portfolio, just close the tab.`,
     readme: `Kaboom.js by watching some of my tutorials <a href="https://youtube.com/@jslegenddev" target="_blank">here</a>.`,
     repo: `This is my PC. I work mostly in JavaScript/TypeScript these days.
   I've made a couple of games in that language. I also like Golang and Python. Anyway regardless of the language, I just like programming.
