@@ -1,4 +1,17 @@
 # 2D Portfolio
+<details closed>
+<summary>Table of Content</summary>
+
+* [How to edit maps files and spritesheet](#how-to-edit-maps-files-and-spritesheet)
+* [Assets](#assets)
+* [Languages](#this-repo-is-developed-with)
+* [How to run](#how-to-run)
+* [How to build](#how-to-build)
+* [How to preview the build](#how-to-preview-the-build)
+* [How to host](#how-to-host)
+* [Useful links](#useful-links)
+
+</details>
 
 
 ## How to edit maps files and spritesheet
@@ -75,12 +88,11 @@ Note: You need `Node.js` and `npm` installed on your machine.
 
 `npm run preview`
 
-## How to host?
+## How to host
 
 Once the project is built. Take the content of the dist folder and drag and drop it
 to your favorite static site hosting provider.
 ___
-<br/>
 
 - This repository is developed based on [**JSLegendDev Portfolio**](https://github.com/JSLegendDev/2d-portfolio-kaboom)
   - His tutorial on how to build this on [YouTube](https://www.youtube.com/watch?v=gwtfWORCN0U)
