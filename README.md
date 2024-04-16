@@ -4,13 +4,20 @@
 
 * [How to edit maps files and spritesheet](#how-to-edit-maps-files-and-spritesheet)
 * [Assets](#assets)
+   * [Map](#map)
+   * [Sprites](#sprites)
 * [Languages](#this-repo-is-developed-with)
-* [How to run](#how-to-run)
-* [How to build](#how-to-build)
-* [How to preview the build](#how-to-preview-the-build)
-* [How to host](#how-to-host)
-* [Useful links](#useful-links)
-
+<details closed>
+   <summary>How to</summary>
+   
+   * [How to run](#how-to-run)
+   * [How to build](#how-to-build)
+   * [How to preview the build](#how-to-preview-the-build)
+   * [How to host](#how-to-host)
+   
+   </details>
+   
+   * [Useful links](#useful-links)
 </details>
 
 
@@ -32,6 +39,10 @@
 When the TileSet Map is ready, Export as an image / Only visible layers.
 
 ### Assets
+#### Map
+![Map](./public/map.png)
+
+#### Sprites
 <table>
    <tr>
       <th colspan=2>
